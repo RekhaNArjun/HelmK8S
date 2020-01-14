@@ -15,5 +15,5 @@ container:
 replicas: 3
 
 service:
-  port: 8888
-  type: ClusterIP
+  port: 80
+  type: NodePort
