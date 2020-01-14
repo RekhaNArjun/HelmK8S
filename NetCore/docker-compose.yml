@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  mbcwebapi:
+    image: mbcrump/mbcwebapi
+    build:
+      context: ./mbcwebapi
+      dockerfile: Dockerfile
+  
+  mbcwebapp:
+    image: mbcrump/mbcwebapp
+    build:
+      context: ./mbcwebapi
+      dockerfile: Dockerfile

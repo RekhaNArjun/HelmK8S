@@ -1,0 +1,23 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: dotnetlinux
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: dotnetlinux
+    spec:
+      containers:
+        - image: "brunoterkaly/dotnetlinux"
+          imagePullPolicy: Always
+          name: dotnetlinux
+          ports:
+            - containerPort: 80
+
+            
+            
+            komalnimje20/webappdemo:v1
+            
+            kubectl expose deployment  --type=LoadBalancer --name=my-service
