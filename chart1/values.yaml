@@ -8,7 +8,7 @@ label:
 container:
   name: aspnet3
   pullPolicy: IfNotPresent
-  image: deepakbedase/webapi
+  image: deepakbedase/netcore
   tag: v2
   port: 80
 

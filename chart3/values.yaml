@@ -8,9 +8,12 @@ label:
 container:
   name: aspnet3
   pullPolicy: IfNotPresent
-  image: deepakbedase/webapi
+  image: deepakbedase/netcore
   tag: v2
   port: 80
+  env: 
+     - name: apiurl
+       value: "http://webapirelease-service/"
 
 replicas: 3
 
